@@ -21,7 +21,8 @@ while True:
         GPIO.output(BUZZER_PIN, 1)
         time.sleep(1)  # Small delay before shutdown
         print("Shutting down the system...")
-        os.system("sudo shutdown now")  # Shutdown command
+        os.system("source ~/.bashrc")
+        os.system("x728off")  # Shutdown command
         break  # Exit the loop after shutdown command
         
     time.sleep(1)
